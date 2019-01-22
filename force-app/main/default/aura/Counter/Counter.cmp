@@ -1,0 +1,4 @@
+<aura:component>
+	<aura:attribute name="increment" type="Integer" default="1" />
+	<lightning:button label="{! v.increment}" title="Neutral action" onclick="{! c.handleClick }"/>
+</aura:component>

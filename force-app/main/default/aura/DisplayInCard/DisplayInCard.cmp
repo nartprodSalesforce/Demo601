@@ -1,0 +1,11 @@
+<aura:component>
+	<lightning:card iconName="action:view_relationship" title="Counter">
+		<div class="slds-p-horizontal_medium">   
+			<div style="width:300px; height:300px; border:1px solid black; margin:5px;" class="slds-align_absolute-center">
+
+				<c:Counter />
+
+			</div>
+		</div>
+	</lightning:card>
+</aura:component>
