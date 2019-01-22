@@ -3,17 +3,17 @@
     <aura:attribute name="ShowButton2" type="Boolean" />
     <div>
         <aura:if isTrue="{! v.ShowButton1 }">
-            <ui:button label="Button 1" />
+            <c:DisplayInCard myIcon="action:check" />
             <aura:set attribute="else">
-                aura:if is false. Don't create Button 1
+                <c:DisplayInCard myIcon="action:goal" />
             </aura:set>
         </aura:if>
     </div>
     <div>
         <aura:if isTrue="{! v.ShowButton2 }">
-            <ui:button label="Button 2" />
+            <c:DisplayInCard myIcon="action:check" />
             <aura:set attribute="else">
-                aura:if is false. Don't create Button 2
+                <c:DisplayInCard myIcon="action:goal" />
             </aura:set>
         </aura:if>
     </div>
