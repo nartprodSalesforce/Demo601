@@ -1,0 +1,12 @@
+<aura:component>
+    <aura:attribute name="myNumber" type="integer" />
+    <aura:attribute name="myNumber2" type="integer" />
+    <lightning:card iconName="action:view_relationship" title="Expressions">
+            <p class="slds-p-horizontal_small">
+                <ui:inputNumber label="Enter a number: " value="{!v.myNumber}" updateOn="keyup" /> 
+                <ui:outputNumber value="{!v.myNumber}" /><br></br>
+                <ui:inputNumber label="Enter a number2: " value="{!v.myNumber2}" updateOn="keyup" />
+                <ui:outputNumber value="{#v.myNumber2}" /> 
+            </p>
+    </lightning:card>
+</aura:component>
