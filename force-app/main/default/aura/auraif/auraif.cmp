@@ -2,18 +2,21 @@
     <aura:attribute name="ShowButton1" type="Boolean" />
     <aura:attribute name="ShowButton2" type="Boolean" />
     <div>
-        <aura:if isTrue="{! v.ShowButton1 }">
-            <c:DisplayInCard myIcon="action:check" />
+        <c:DisplayInCard title='Ternary' myIcon="{! v.ShowButton1 == 'true'? 'action:check' : 'action:fallback'}" />
+    </div>
+    <div>
+        <aura:if isTrue="{!v.ShowButton1}">
+            <c:DisplayInCard title='Aura:if' myIcon="action:check" />
             <aura:set attribute="else">
-                <c:DisplayInCard myIcon="action:goal" />
+                <c:UsingExpressions title='Aura:if' />
             </aura:set>
         </aura:if>
     </div>
     <div>
         <aura:if isTrue="{! v.ShowButton2 }">
-            <c:DisplayInCard myIcon="action:check" />
-            <aura:set attribute="else">
-                <c:DisplayInCard myIcon="action:goal" />
+            <c:DisplayInCard title='Aura:if' myIcon="action:check" />
+            <aura:set attribute="else"> 
+                <c:UsingExpressions  title='Aura:if'/>
             </aura:set>
         </aura:if>
     </div>
