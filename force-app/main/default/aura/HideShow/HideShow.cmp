@@ -1,0 +1,13 @@
+<aura:component>
+    <div>
+        <lightning:button label="Click Me to slds-hide" title="Click Me" onclick="{!c.clickHide }" />
+        <div aura:id="response">Look at me</div>
+        <div>I'm just sitting here</div>
+    </div>
+    <br></br>
+    <div>
+        <lightning:button label="Click Me to slds-hidden" title="Click Me" onclick="{!c.clickHidden }" />
+        <div aura:id="response1">Look at me</div>
+        <div>I'm just sitting here</div>
+    </div>
+</aura:component>
