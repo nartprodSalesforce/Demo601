@@ -1,0 +1,10 @@
+<aura:component>
+    <aura:attribute name="myNames" type="String[]" access="public" />
+    <div class="background2">
+        <aura:iteration items="{!v.myNames}" var="thisName">
+            <p>
+                <lightning:formattedText value="{!thisName}" />
+            </p>
+        </aura:iteration>
+    </div>
+</aura:component>
