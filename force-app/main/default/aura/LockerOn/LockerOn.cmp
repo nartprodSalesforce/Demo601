@@ -1,0 +1,3 @@
+<aura:component>
+	<lightning:button variant="brand" label="Locker Enabled" onclick="{!c.showLabel}" />
+</aura:component>
