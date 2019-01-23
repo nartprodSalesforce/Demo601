@@ -10,7 +10,7 @@
 DemoCounter is part of the Lightning vs VF demo
 DemoUsingExpressions is the {! vs {# demo
 DemoSpaceorNotSpace: CSS demo 
-DemoAuaIf: auraif cmp toglles icon for card in DisplayCard component 
+DemoAuaIf: auraif cmp toglles icon for card in DisplayCard component . Uses both Ternary and aura:if to compare differences
 
 
 ## Issues
