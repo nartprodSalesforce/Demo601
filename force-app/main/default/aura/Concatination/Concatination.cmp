@@ -1,0 +1,14 @@
+<aura:component>
+	<aura:attribute name="address" type="string" required="true" />
+	<aura:attribute name="label" type="string" required="true" />
+         <div class="slds-p-horizontal_medium">   
+             <div  class=" slds-align_absolute-center">
+                    <a href="{! 'mailto:' + v.address }">{! v.label }</a>
+                 </div>
+             </div>
+         <div class="slds-p-horizontal_medium">   
+             <div  class="slds-align_absolute-center">
+                    <a href="{!concat('mailto:',v.address)}">{! v.label }</a>
+                 </div>
+             </div>
+</aura:component>
