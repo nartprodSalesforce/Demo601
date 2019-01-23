@@ -1,18 +1,13 @@
 <aura:component>
-    <div>
-        <!-- <lightning:button label="Click Me to slds-hide" title="Click Me" onclick="{!c.clickHide }" /> -->
-        <lightning:buttonGroup>
-            <lightning:button label="slds-hide" onclick="{!c.clickHide }"/>
-            <lightning:button label="slds-hidden" onclick="{!c.clickHidden }" />
-        </lightning:buttonGroup>
+    <div class="background1">
+        <div>
+            <lightning:buttonGroup>
+                <lightning:button label="slds-hide" onclick="{!c.clickHide }" />
+                <lightning:button label="slds-hidden" onclick="{!c.clickHidden }" />
+            </lightning:buttonGroup>
+        </div>
         <div><img src="{!$Resource.Woman}" /></div>
         <div aura:id="response"><img src="{!$Resource.Man}" /></div>
         <div><img src="{!$Resource.Pet}" /></div>
     </div>
-    <br></br>
-    <!-- <div>
-        <lightning:button label="Click Me to slds-hidden" title="Click Me" onclick="{!c.clickHidden }" />
-        <div aura:id="response1">Look at me</div>
-        <div>I'm just sitting here</div>
-    </div> -->
 </aura:component>
