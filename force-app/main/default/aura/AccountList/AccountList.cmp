@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" extends="c:Base" controller="AccountController">
+    <aura:attribute name="accountList" access="private" type="Account[]" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:card iconName="action:view_relationship" title="Get Names">
+        <div class="slds-p-horizontal_medium">   
+            <div class="background1">
+                <aura:iteration items="{!v.accountList}" var="thisAct">
+                    <p>
+                        
+                        <lightning:formattedText value="{!thisAct.Name}" />
+                    </p>
+                </aura:iteration>
+            </div>
+        </div>
+    </lightning:card>
+</aura:component>
