@@ -1,10 +1,12 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
     <aura:attribute name="names" type="Object[]" />
     <aura:attribute name="name" type="String" default=" " />
+    <aura:handler name="onNameValueAdded" event="c:NameValueAdded" action="{!c.onNameAdded}" />
     <lightning:card iconName="action:view_relationship" title="Get Names">
         <div class="slds-p-horizontal_medium">   
             <div class="background1">
-                <p>
+                <c:GetNameandValue />
+                <!-- <p>
                     <lightning:input aura:id="name" name="inputname" label="Enter Name" />
                 </p>
                 <p>
@@ -12,7 +14,7 @@
                 </p>
                 <p>
                     <lightning:button label="Neutral" title="Neutral action" onclick="{! c.handleClick }" />
-                </p>
+                </p> -->
             </div>
         </div>
     </lightning:card>
