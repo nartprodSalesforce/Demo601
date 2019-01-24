@@ -1,5 +1,4 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
-    <!-- <aura:attribute name="names" type="Object[]" /> -->
     <aura:registerEvent name="onNameValueAdded" type="c:NameValueAdded" />
 
     <p>
@@ -9,7 +8,6 @@
         <lightning:input aura:id="value" type="number" name="inputvalue" label="Enter value" />
     </p>
     <p>
-        <lightning:button label="Neutral" title="Neutral action" onclick="{! c.handleClick }" />
+        <lightning:button label="Add" title="Neutral action" onclick="{! c.handleClick }" />
     </p>
-
 </aura:component>

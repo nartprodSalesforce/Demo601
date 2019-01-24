@@ -6,27 +6,12 @@
         <div class="slds-p-horizontal_medium">   
             <div class="background1">
                 <c:GetNameandValue />
-                <!-- <p>
-                    <lightning:input aura:id="name" name="inputname" label="Enter Name" />
-                </p>
-                <p>
-                    <lightning:input aura:id="value" type="number" name="inputvalue" label="Enter value" />
-                </p>
-                <p>
-                    <lightning:button label="Neutral" title="Neutral action" onclick="{! c.handleClick }" />
-                </p> -->
             </div>
         </div>
     </lightning:card>
     <lightning:card iconName="action:new_task" title="Select Names">
         <div class="background1 slds-p-horizontal_medium">
-            <p>
-                <lightning:select name="nameId" label="Select an item" aura:Id="selectName" value="2">
-                    <aura:iteration items="{!v.names}" var="thename">
-                        <option value="{!thename.Value}"> {!thename.Name} </option>
-                    </aura:iteration>
-                </lightning:select>
-            </p>
+            <c:AddNameToSelect names="{!v.names}" />
         </div>
     </lightning:card>
 

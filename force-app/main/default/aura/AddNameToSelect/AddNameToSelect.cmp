@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="names" type="Object[]" />
+    <p>
+        <lightning:select name="nameId" label="Select an item" aura:Id="selectName" value="2">
+            <aura:iteration items="{!v.names}" var="thename">
+                <option value="{!thename.Value}"> {!thename.Name} </option>
+            </aura:iteration>
+        </lightning:select>
+    </p>
+</aura:component>
