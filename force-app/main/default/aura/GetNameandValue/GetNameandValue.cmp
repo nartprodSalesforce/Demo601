@@ -1,6 +1,5 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
     <aura:registerEvent name="onNameValueAdded" type="c:NameValueAdded" />
-
     <p>
         <lightning:input aura:id="name" name="inputname" label="Enter Name" />
     </p>
