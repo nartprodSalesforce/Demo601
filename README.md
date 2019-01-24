@@ -15,7 +15,7 @@ DemoGetSetButtonLabel: Getting and Setting Component Attribute Values
 DemoHideShow: slds-hide vs slds-hidden demo
 Locker: demonstrates Locker Service: Locking down the DOM from other compenets. Prior to v40 api no locker services
 DemoDynamicSelect: DEmonstrates lighting:select alnnog with dynamic selection of data from user input
-DEmoAccountList: Serverside controller with Abstract Base class for server call
+DemoAccountList: Serverside controller with Abstract Base class for server call
 
 
 ## Issues
