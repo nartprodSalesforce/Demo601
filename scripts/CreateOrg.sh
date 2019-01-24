@@ -5,4 +5,5 @@ echo "*** Opening scratch Org..."
 sfdx force:org:open
 echo "*** Pushing metadata to scratch Org..."
 sfdx force:source:push
-
+echo "*** Pushing Account Contact data to scratch Org..."
+sfdx force:data:tree:import -f Account-Contact.json
