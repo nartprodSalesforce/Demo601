@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" extends="c:Base" controller="AccountController">
+    <aura:attribute name="accountid" access="public" type="Id" />
+    <aura:if isTrue="{!v.accountid}">
+        <lightning:recordViewForm recordId="{!v.accountid}" objectApiName="Account">
+            <div class="slds-box">
+                <lightning:outputField fieldName="Name" />
+                <lightning:outputField fieldName="BillingAddress" />
+            </div>
+        </lightning:recordViewForm>
+    </aura:if>
+</aura:component>
