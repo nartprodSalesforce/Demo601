@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" extends="c:Base" controller="AccountController">
+    <aura:attribute name="accountid" access="public" type="Id" />
+    <aura:if isTrue="{!v.accountid}">
+        <force:recordView recordId="{!v.accountid}" />
+    </aura:if>
+</aura:component>

@@ -4,6 +4,12 @@
 
     },
     onChange: function (component, event, helper) {
-        alert('Account ID: '+ component.find('select').get('v.value'));
+        var myID = component.find('select').get('v.value');
+        component.set("v.accountid",myID);
+        // var e = component.getEvent('onEventGetAccountID');
+		// e.setParams({
+        //     accountId: myID
+		// });
+		// e.fire();
     }
 })

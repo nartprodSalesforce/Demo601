@@ -1,5 +1,7 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global" extends="c:Base" controller="AccountController">
     <aura:attribute name="accountList" access="private" type="Account[]" />
+    <aura:attribute name="accountid" access="private" type="Id" />
+    <!-- <aura:registerEvent name="onEventGetAccountID" type="c:EventGetAccountID" /> -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <p>
         <lightning:select name="select" label="Select an Account" aura:Id="select" onchange="{!c.onChange}">
@@ -8,4 +10,5 @@
             </aura:iteration>
         </lightning:select>
     </p>
+    <c:RecordView accountid="{!v.accountid}"/>
 </aura:component>
