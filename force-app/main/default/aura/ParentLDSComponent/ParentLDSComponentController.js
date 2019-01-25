@@ -1,10 +1,7 @@
 ({
-    handleClick : function (component, event, helper) {
-        // var myAccounts = component.find("accts").get("v.value");
-		// var e = component.getEvent('onAccountsLoaded');
-		// e.setParams({
-        //     accountList: myAccounts
-		// });
-		// e.fire();
+    onAccountPassed: function (component, event, helper) {
+        debugger;
+        var myID = event.getParam("accountId");
+        component.set("v.accountid", myID);
     }
 })

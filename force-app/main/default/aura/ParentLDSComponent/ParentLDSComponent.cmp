@@ -1,9 +1,11 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="accountid" access="private" type="String" />
+    <aura:handler name="onEventGetAccountID" event="c:EventGetAccountID" action="{!c.onAccountPassed}" />
     <aura:attribute name="accts" type="Account[]" />
-    <lightning:card iconName="action:new_task" title="Select Names">
+    <lightning:card iconName="action:new_task" title="Select Account">
         <div class="background1 slds-p-horizontal_medium">
-            <c:AddAccountsToSelect  />
+            <c:AddAccountsToSelect />
         </div>
     </lightning:card>
-
+    <c:RecordView accountid="{!v.accountid}"/>
 </aura:component>
