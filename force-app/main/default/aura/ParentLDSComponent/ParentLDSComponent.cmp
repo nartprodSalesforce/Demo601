@@ -4,7 +4,8 @@
     <aura:attribute name="accountid" access="private" type="String" />
     <aura:attribute name="options" type="List" default="[
     {'label': 'RecordView', 'value': 'option1'},
-    {'label': 'RecordViewForm', 'value': 'option2'}
+    {'label': 'RecordViewForm', 'value': 'option2'},
+    {'label': 'RecordEdit', 'value': 'option3'}
     ]" />
     <aura:attribute name="value" type="String" default="option1" />
     <lightning:radioGroup name="radioButtonGroup" label="Radio Button Group" options="{! v.options }" value="{! v.value }"
@@ -20,5 +21,8 @@
     </aura:if>
     <aura:if isTrue="{!v.value == 'option2'}">
         <c:RecordViewForm accountid="{!v.accountid}" />
+    </aura:if>
+    <aura:if isTrue="{!v.value == 'option3'}">
+        <c:RecordEdit accountid="{!v.accountid}" />
     </aura:if>
 </aura:component>
