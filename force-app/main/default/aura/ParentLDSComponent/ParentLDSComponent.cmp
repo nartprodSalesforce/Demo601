@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="accts" type="Account[]" />
+    <!-- <aura:handler name="onAccountsLoaded" event="c:AccountsLoaded" action="{!c.onAccountsAdded}" /> -->
+    <!-- <lightning:card iconName="action:view_relationship" title="Get Accounts">
+        <div class="slds-p-horizontal_medium">   
+            <div class="background1">
+                <c:SelectAccountUsingController />
+            </div>
+        </div>
+    </lightning:card> -->
+    <lightning:card iconName="action:new_task" title="Select Names">
+        <div class="background1 slds-p-horizontal_medium">
+            <c:AddAccountsToSelect  />
+        </div>
+    </lightning:card>
+
+</aura:component>

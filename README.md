@@ -4,7 +4,8 @@
 
 
 ## Resources
-
+GitHup Repro
+https://github.com/swernersalesforce/Demo601
 
 ## Description of Files and Directories
 DemoCounter is part of the Lightning vs VF demo

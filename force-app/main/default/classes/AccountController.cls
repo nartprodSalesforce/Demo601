@@ -10,7 +10,7 @@ public with sharing class AccountController {
     public static List<Account> getAccounts(){
 
         return [Select Name,BillingCity, BillingState, BillingPostalCode, BillingCountry
-                From Account Limit 5 ];
+                From Account Limit 25 ];
       
     }
 }

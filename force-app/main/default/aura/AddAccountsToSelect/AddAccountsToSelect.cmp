@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" extends="c:Base" controller="AccountController">
+    <aura:attribute name="accountList" access="private" type="Account[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <p>
+        <lightning:select name="acctId" label="Select an Account" aura:Id="selectAccount" value="2">
+            <aura:iteration items="{!v.accountList}" var="theacct">
+                <option value="{!theacct.Id}"> {!theacct.Name} </option>
+            </aura:iteration>
+        </lightning:select>
+    </p>
+</aura:component>
