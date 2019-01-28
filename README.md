@@ -19,6 +19,7 @@ DemoDynamicSelect: DEmonstrates lighting:select alnnog with dynamic selection of
 DemoAccountList: Serverside controller with Abstract Base class for server call
 DemoLDS: Shows 4 LDS functions. Uses Events
 DEmoBody: referencing v.body from controller: pass values in Markup 
+DemoParentChild: calling chinld controller from Parent passing a paremeter
 
 
 ## Issues

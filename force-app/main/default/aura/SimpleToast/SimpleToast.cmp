@@ -1,0 +1,5 @@
+<aura:component>
+    <aura:attribute type="String" name="accountName" default="Pizza House" />
+    <lightning:notificationsLibrary aura:id="notifLib" />
+    <lightning:button name="toast" label="Show Toast" onclick="{!c.onShowToast}" />
+</aura:component>
