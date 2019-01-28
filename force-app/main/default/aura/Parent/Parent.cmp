@@ -1,0 +1,4 @@
+<aura:component>
+    <c:Child aura:id="child" />
+    <lightning:button label="Press Me" onclick="{!c.handleClick}" />
+</aura:component>

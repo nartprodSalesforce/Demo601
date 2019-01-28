@@ -18,6 +18,7 @@ Locker: demonstrates Locker Service: Locking down the DOM from other compenets. 
 DemoDynamicSelect: DEmonstrates lighting:select alnnog with dynamic selection of data from user input. Used Event Handling
 DemoAccountList: Serverside controller with Abstract Base class for server call
 DemoLDS: Shows 4 LDS functions. Uses Events
+DEmoBody: referencing v.body from controller: pass values in Markup 
 
 
 ## Issues
