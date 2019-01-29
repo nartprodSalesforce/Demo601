@@ -23,6 +23,7 @@ DemoParentChild: calling chinld controller from Parent passing a paremeter
 DemoSimpleToast: check to see if lightning so not to show tast
 ParentToastComp: lives in Lighintg app will show toast
 DemoDynamicButton: From developers guide creates a dyanmic button in controller and places it in v.body
+VFApp: (aura:dependancy) How To Display Lightning Component In Visualforce Page-Sample http://sfdcmonkey.com/2017/08/19/display-lightning-component-visualforce-page/
 ## Issues
 
 
