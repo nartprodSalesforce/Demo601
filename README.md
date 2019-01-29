@@ -22,7 +22,7 @@ DEmoBody: referencing v.body from controller: pass values in Markup
 DemoParentChild: calling chinld controller from Parent passing a paremeter
 DemoSimpleToast: check to see if lightning so not to show tast
 ParentToastComp: lives in Lighintg app will show toast
-
+DemoDynamicButton: From developers guide creates a dyanmic button in controller and places it in v.body
 ## Issues
 
 
