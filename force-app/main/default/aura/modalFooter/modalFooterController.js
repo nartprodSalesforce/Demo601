@@ -4,6 +4,6 @@
         component.find("overlayLib").notifyClose();
     },
     handleOK : function(component, event, helper) {
-        //do something
+        alert('"Yah, okay"');
     }
 })

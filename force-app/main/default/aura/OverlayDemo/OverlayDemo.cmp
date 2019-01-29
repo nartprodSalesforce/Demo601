@@ -1,4 +1,5 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
     <lightning:overlayLibrary aura:id="overlayLib"/>
     <lightning:button name="modal" label="Show Modal" onclick="{!c.handleShowModal}"/>
+    <lightning:button name="modal" label="Show Foot" onclick="{!c.handleShowModalFooter}"/>
 </aura:component>
