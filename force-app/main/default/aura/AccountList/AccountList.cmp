@@ -7,7 +7,7 @@
         <div class="slds-p-horizontal_medium">   
             <div class="background1">
                 <aura:iteration items="{!v.accountList}" var="thisAct">
-                    <p>
+                    <p> 
                         
                         <lightning:formattedText value="{!thisAct.Name}" />
                     </p>
