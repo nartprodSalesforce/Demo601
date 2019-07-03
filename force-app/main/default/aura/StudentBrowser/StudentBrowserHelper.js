@@ -1,15 +1,19 @@
 ({
   onInit: function(component, event, helper) {
-    var students = [];
-    var studentNames = ["Steve", "Dave", "Joe", "Jyoti", "Andres"];
-    for (var i = 0; i < 5; i++) {
-      students.push({
-        sobjectType: "Contact",
-        Name: studentNames[i],
-        PhotoUrl: "/services/images/photo/003B0000009VnYcIAK",
-        Id: i
-      });
-    }
-    component.set("v.studentList", students);
+    helper.queryStudents(component, helper, "", "");
+  },
+
+  queryStudents: function(component, helper, instructorId, courseDeliveryId) {
+    helper.callServer(
+      component,
+      "c.getStudents",
+      function(response) {
+        component.set("v.studentList", response);
+      },
+      {
+        instructorId: instructorId,
+        courseDeliveryId: courseDeliveryId
+      }
+    );
   }
 });
