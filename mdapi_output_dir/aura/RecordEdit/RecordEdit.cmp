@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global"  >
+    <aura:attribute name="accountid" access="public" type="Id" />
+    <aura:if isTrue="{!v.accountid}">
+        <force:recordEdit aura:id="edit" recordId="{!v.accountid}" />
+        <lightning:button label="Save" onclick="{!c.save}"/>
+    </aura:if>
+</aura:component>

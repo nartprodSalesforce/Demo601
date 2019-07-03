@@ -1,0 +1,6 @@
+<!--From Developers Guide -->
+<aura:component>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <p>Dynamically created button</p>
+    {!v.body}
+</aura:component>

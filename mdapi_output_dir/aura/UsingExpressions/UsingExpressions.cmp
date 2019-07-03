@@ -1,0 +1,13 @@
+<aura:component>
+    <aura:attribute name="myNumber" type="integer" />
+    <aura:attribute name="myNumber2" type="integer" />
+    <aura:attribute name="title" type="String" default="Expressions" access="public"  />
+    <lightning:card iconName="action:view_relationship" title="{!v.title}">
+            <p class="slds-p-horizontal_small">
+                <lightning:input type="number" name="input1" label="Enter a number: "  value="{!v.myNumber}" updateOn="keyup"/>
+                <p><lightning:formattedNumber value="{!v.myNumber}"/></p><br></br>
+                <lightning:input type="number" name="input2" label="Enter a number: "  value="{!v.myNumber2}" updateOn="keyup"/>
+                <p><lightning:formattedNumber value="{#v.myNumber2}"/></p><br></br>
+            </p>
+    </lightning:card>
+</aura:component>

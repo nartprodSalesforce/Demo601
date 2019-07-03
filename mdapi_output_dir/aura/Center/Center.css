@@ -1,0 +1,17 @@
+.THIS.background1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	background-color: #344A5F; 
+  }
+  .THIS .background2 {
+	width: 100px; height: 100px;
+	margin: auto;
+	background-color: #F0F1F2; 
+	}
+	.THIS .background3 {
+		width: 50px; height: 50px;
+		margin: auto;
+		background-color: #F0F1F2; 
+		}
+  

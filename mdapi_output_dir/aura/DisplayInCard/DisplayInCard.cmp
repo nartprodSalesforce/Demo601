@@ -1,0 +1,11 @@
+<aura:component>
+	<aura:attribute name="myIcon" type="String" default="action:view_relationship" />
+	<aura:attribute name="title" type="String" default="Counter" access="public" />
+	<lightning:card iconName="{!v.myIcon}" title="{!v.title}">
+		<div class="slds-p-horizontal_medium">   
+			<div  class="background1 slds-align_absolute-center">
+					<c:Counter />
+				</div>
+			</div>
+	</lightning:card>
+</aura:component>

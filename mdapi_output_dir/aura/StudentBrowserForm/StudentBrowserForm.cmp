@@ -1,0 +1,14 @@
+<aura:component extends="c:Base" controller="StudentBrowserForm">
+    <aura:attribute name="instructors" type="User[]" access="private" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <lightning:card title="Filter Students" iconName="utility:search">
+        <lightning:layout horizontalAlign="center">
+            <lightning:layoutItem padding="around-small">
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small">
+            </lightning:layoutItem>
+        </lightning:layout>
+
+    </lightning:card>
+
+</aura:component>

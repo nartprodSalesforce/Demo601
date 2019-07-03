@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:handler name="onEventGetAccountID" event="c:EventGetAccountID" action="{!c.onAccountPassed}" />
+    <aura:attribute name="accts" type="Account[]" />
+    <aura:attribute name="accountid" access="private" type="String" />
+    <aura:attribute name="options" type="List" default="[
+    {'label': 'RecordView', 'value': 'option1'},
+    {'label': 'RecordViewForm', 'value': 'option2'},
+    {'label': 'RecordEdit', 'value': 'option3'},
+    {'label': 'RecordEditForm', 'value': 'option4'}
+    ]" />
+    <aura:attribute name="value" type="String" default="option1" />
+    <lightning:radioGroup name="radioButtonGroup" label="Radio Button Group" options="{! v.options }" value="{! v.value }"
+        type="button" />
+
+    <lightning:card iconName="action:new_task" title="Select Account">
+        <div class="background1 slds-p-horizontal_medium">
+            <c:AddAccountsToSelect />
+        </div>
+    </lightning:card>
+    <aura:if isTrue="{!v.value == 'option1'}">
+        <c:RecordView accountid="{!v.accountid}" />
+    </aura:if>
+    <aura:if isTrue="{!v.value == 'option2'}">
+        <c:RecordViewForm accountid="{!v.accountid}" />
+    </aura:if>
+    <aura:if isTrue="{!v.value == 'option3'}">
+        <c:RecordEdit accountid="{!v.accountid}" />
+    </aura:if>
+    <aura:if isTrue="{!v.value == 'option4'}">
+        <c:RecordEditForm accountid="{!v.accountid}" />
+    </aura:if>
+</aura:component>

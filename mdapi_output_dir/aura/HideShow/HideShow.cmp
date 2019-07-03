@@ -1,0 +1,13 @@
+<aura:component>
+    <div class="background1">
+        <div>
+            <lightning:buttonGroup>
+                <lightning:button label="slds-hide" onclick="{!c.clickHide }" />
+                <lightning:button label="slds-hidden" onclick="{!c.clickHidden }" />
+            </lightning:buttonGroup>
+        </div>
+        <div><img src="{!$Resource.Woman}" /></div>
+        <div aura:id="response"><img src="{!$Resource.Man}" /></div>
+        <div><img src="{!$Resource.Pet}" /></div>
+    </div>
+</aura:component>

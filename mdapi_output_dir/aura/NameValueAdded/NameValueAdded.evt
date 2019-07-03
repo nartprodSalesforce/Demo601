@@ -1,0 +1,5 @@
+<aura:event type="COMPONENT" description="Event template">
+    <!-- <aura:attribute name="updatedList" type="Object[]" /> -->
+    <aura:attribute name="newName" type="string" />
+    <aura:attribute name="newValue" type="Integer" />
+</aura:event>
