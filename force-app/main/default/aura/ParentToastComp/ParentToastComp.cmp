@@ -21,4 +21,4 @@
         <aura:if isTrue="{!v.value == 'option4'}">
             <!-- <c:RecordEditForm accountid="{!v.accountid}" /> -->
         </aura:if>
-</aura:component>	
+</aura:component>

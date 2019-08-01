@@ -1,3 +1,3 @@
 <aura:application>
  <c:Parent/>
-</aura:application>	
+</aura:application>
